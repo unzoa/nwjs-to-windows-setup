@@ -1,0 +1,40 @@
+{
+  "name": "edr-terminal",
+  "appName": "EDR",
+  "version": "1.0.0",
+  "description": "EDR Terminal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./build/win.js params"
+  },
+  "keywords": [
+    "inno",
+    "innosetup",
+    "setup",
+    "windows",
+    "installer",
+    "node"
+  ],
+  "author": "Roarpanda",
+  "license": "ISC",
+  "window": {
+    "toolbar": false,
+    "width": 1000,
+    "height": 600,
+    "min_width": 800,
+    "min_height": 500,
+    "resizable": true,
+    "frame": false,
+    "kiosk": false,
+    "icon": "./build/setup_resources/logo.ico",
+    "show_in_taskbar": true
+  },
+  "nodejs": true,
+  "js-flags": "--harmony",
+  "node-remote": "<all_urls>",
+  "devDependencies": {
+    "iconv-lite": "^0.4.15",
+    "innosetup-compiler": "^5.5.9"
+  }
+}
