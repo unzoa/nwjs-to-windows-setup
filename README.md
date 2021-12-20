@@ -1,6 +1,6 @@
 # 打包windows安装程序
 
-> 应用插件 [innosetup-compiler](https://www.npmjs.com/package/innosetup-compiler)
+> 应用插件 [innosetup-compiler](https://www.npmjs.com/package/innosetup-compiler)。
 > 本项目中部分代码针对是 NW.js sdk程序
 
 ## 首先
@@ -49,7 +49,7 @@ npm run build yourAppFolderName,yourAppFolderName-2
 
 
 ```bash
-# 用到windows下命令将程序文件与启动文件nw.exe相加
+# 用到windows下命令，将程序文件与启动文件nw.exe相加
 # 在win.js中使用了copy-nw-and-p.nw.js, 执行了以下windows上功能
 copy /b nw.exe+package.nw ${name}.exe
 ```
